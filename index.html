@@ -8,7 +8,7 @@
 <meta property="og:title" content="PT Agro Terra Export">
 <meta property="og:description" content="We connect Indonesia's agricultural potential with global markets through reliable, quality-driven, and sustainable export solutions.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#30421B">
+<meta name="theme-color" content="#FFFFFF">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <style>@font-face{font-family:"Montserrat";src:url("fonts/Montserrat-Regular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Montserrat";src:url("fonts/Montserrat-SemiBold.woff") format("woff");font-weight:600;font-style:normal;font-display:swap}
@@ -19,56 +19,59 @@
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{font-family:"Montserrat",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--awan);color:var(--batu);min-height:100vh;line-height:1.5;-webkit-font-smoothing:antialiased}
 .page{max-width:480px;min-height:100vh;margin:0 auto;background:var(--awan);display:flex;flex-direction:column}
-/* header: photo layer + palette overlay; photo eases in with a slow, GPU-friendly zoom */
-header{position:relative;overflow:hidden;color:var(--awan);text-align:center;padding:56px 28px 44px;background:var(--kebun);isolation:isolate}
-header::before{content:"";position:absolute;inset:0;z-index:-2;background:url("img/header-cocoa.jpg") center 30%/cover no-repeat;transform:scale(1.08);animation:settle 2.4s cubic-bezier(.16,1,.3,1) forwards;will-change:transform}
-header::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(48,66,27,.80) 0%,rgba(48,66,27,.90) 55%,rgba(48,66,27,.96) 100%)}
-.logo{display:block;width:84px;height:auto;margin:0 auto 24px}
-h1{font-size:1.625rem;font-weight:700;letter-spacing:.01em;line-height:1.25}
-.tag{margin:14px auto 0;max-width:34ch;font-size:.9375rem;font-weight:400;line-height:1.6}
-main{flex:1;padding:36px 22px 28px}
+header{text-align:center;padding:64px 28px 12px;color:var(--hijau)}
+.logo{display:block;width:104px;height:auto;margin:0 auto 26px}
+h1{font-size:1.625rem;font-weight:700;letter-spacing:.01em;line-height:1.25;color:var(--hijau)}
+.tag{margin:14px auto 0;max-width:34ch;font-size:.9375rem;font-weight:400;line-height:1.65;color:var(--hijau)}
+.rule{width:44px;height:3px;border-radius:3px;background:var(--rumput);margin:26px auto 0}
+main{flex:1;padding:30px 22px 28px}
 .label{font-size:.8125rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--coklat);text-align:center;margin-bottom:20px}
 ul{list-style:none;display:flex;flex-direction:column;gap:14px}
-.btn{display:flex;align-items:center;gap:14px;min-height:68px;padding:12px 16px;border:2px solid var(--hijau);border-radius:14px;
+.btn{display:flex;align-items:center;gap:14px;min-height:68px;padding:12px 16px;border:2px solid var(--hijau);border-radius:16px;
   background:var(--awan);color:var(--kebun);text-decoration:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation;
-  box-shadow:0 1px 2px rgba(48,66,27,.06),0 4px 14px rgba(48,66,27,.06);
-  transition:transform .18s cubic-bezier(.2,.8,.2,1),box-shadow .18s ease,background-color .18s ease,color .18s ease,border-color .18s ease}
-.btn .ico{flex:0 0 auto;width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:var(--hijau);transition:color .18s ease}
+  -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;
+  box-shadow:0 1px 2px rgba(48,66,27,.05),0 6px 18px rgba(48,66,27,.06);
+  transition:transform .7s cubic-bezier(.34,1.56,.64,1),box-shadow .35s ease,background-color .3s ease,color .3s ease,border-color .3s ease;
+  transition:transform .7s linear(0,0.0436,0.1542,0.304,0.4699,0.6335,0.7821,0.9074,1.0057,1.0762,1.1208,1.1431,1.1473,1.1382,1.1202,1.0972,1.0726,1.0488,1.0276,1.01,0.9964,0.9869,0.9811,0.9785,0.9784,0.9801,0.983,0.9865,0.9901,0.9936,0.9966,0.999,1.0009,1.0022,1.0029,1.0032,1.0032,1.0029,1.0024,1.0019,1.0013,1.0008,1.0004,1.0001,0.9998,0.9996,0.9996,0.9995,1),box-shadow .35s ease,background-color .3s ease,color .3s ease,border-color .3s ease}
+.btn .ico{flex:0 0 auto;width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:var(--hijau);transition:color .3s ease}
 .btn .ic{width:28px;height:28px;display:block}
 .btn .txt{flex:1;min-width:0;display:flex;flex-direction:column}
 .btn .t{font-size:1.0625rem;font-weight:700;line-height:1.3}
-.btn .s{font-size:.875rem;font-weight:400;color:var(--batu);line-height:1.4;overflow-wrap:break-word;transition:color .18s ease}
-.btn .chev{flex:0 0 auto;width:20px;height:20px;color:var(--hijau);transition:transform .18s cubic-bezier(.2,.8,.2,1),color .18s ease}
-.btn.primary{background:var(--hijau);color:var(--awan);box-shadow:0 2px 4px rgba(48,66,27,.12),0 8px 22px rgba(48,66,27,.18)}
+.btn .s{font-size:.875rem;font-weight:400;color:var(--batu);line-height:1.4;overflow-wrap:break-word;transition:color .3s ease}
+.btn .chev{flex:0 0 auto;width:20px;height:20px;color:var(--hijau);transition:transform .6s cubic-bezier(.34,1.56,.64,1),color .3s ease;transition:transform .6s linear(0,0.0436,0.1542,0.304,0.4699,0.6335,0.7821,0.9074,1.0057,1.0762,1.1208,1.1431,1.1473,1.1382,1.1202,1.0972,1.0726,1.0488,1.0276,1.01,0.9964,0.9869,0.9811,0.9785,0.9784,0.9801,0.983,0.9865,0.9901,0.9936,0.9966,0.999,1.0009,1.0022,1.0029,1.0032,1.0032,1.0029,1.0024,1.0019,1.0013,1.0008,1.0004,1.0001,0.9998,0.9996,0.9996,0.9995,1),color .3s ease}
+.btn.primary{background:var(--hijau);color:var(--awan);box-shadow:0 2px 4px rgba(48,66,27,.12),0 10px 24px rgba(48,66,27,.18)}
 .btn.primary .ico,.btn.primary .s,.btn.primary .chev{color:var(--awan)}
-/* press feedback (touch) — transform only, so it stays smooth on iPhone */
-.btn:active{transform:scale(.97);box-shadow:0 1px 2px rgba(48,66,27,.08)}
-/* hover only on devices that really hover (avoids "sticky hover" after a tap on iOS) */
+/* press: quick squeeze in, then a soft spring back on release (iOS-style) */
+.btn:active{transform:scale(.96);box-shadow:0 1px 2px rgba(48,66,27,.08);transition:transform .14s cubic-bezier(.3,0,.5,1),box-shadow .14s ease,background-color .3s ease,color .3s ease,border-color .3s ease}
+/* hover only on devices that really hover (no "sticky hover" on iPhone) */
 @media (hover:hover){
-  .btn:hover{background:var(--kebun);border-color:var(--kebun);color:var(--awan);transform:translateY(-2px);box-shadow:0 10px 24px rgba(48,66,27,.18)}
+  .btn:hover{background:var(--kebun);border-color:var(--kebun);color:var(--awan);transform:translateY(-2px);box-shadow:0 12px 28px rgba(48,66,27,.18)}
   .btn:hover .ico,.btn:hover .s,.btn:hover .chev{color:var(--awan)}
-  .btn:hover .chev{transform:translateX(3px)}
-  .btn:active{transform:scale(.97)}
+  .btn:hover .chev{transform:translateX(4px)}
+  .btn:hover:active{transform:translateY(0) scale(.96)}
 }
 .btn:focus-visible{outline:3px solid var(--coklat);outline-offset:3px}
-footer{padding:8px 24px 32px;text-align:center;font-size:.8125rem;color:var(--batu);line-height:1.6}
-footer strong{font-weight:600;color:var(--kebun)}
-/* entrance: gentle rise + fade, staggered */
-@keyframes rise{from{opacity:0;transform:translate3d(0,16px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
-@keyframes settle{to{transform:scale(1)}}
-.logo,h1,.tag,.label,li,footer{animation:rise .7s cubic-bezier(.16,1,.3,1) both}
-.logo{animation-delay:.05s}h1{animation-delay:.14s}.tag{animation-delay:.22s}.label{animation-delay:.32s}
-li:nth-child(1){animation-delay:.38s}li:nth-child(2){animation-delay:.45s}li:nth-child(3){animation-delay:.52s}li:nth-child(4){animation-delay:.59s}
-footer{animation-delay:.68s}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}header::before{transform:none}}
-@media (min-width:520px){body{padding:40px 0}.page{min-height:calc(100vh - 80px);border-radius:20px;overflow:hidden;box-shadow:0 2px 6px rgba(48,66,27,.06),0 18px 50px rgba(48,66,27,.14)}}</style>
+footer{padding:8px 24px 34px;text-align:center;font-size:.8125rem;color:var(--batu);line-height:1.6}
+footer strong{font-weight:600;color:var(--hijau)}
+/* entrance: content "materialises" like iOS/macOS — fade + de-blur (ease-out) while position/scale settle on a spring */
+@keyframes fadein{from{opacity:0;filter:blur(6px)}to{opacity:1;filter:blur(0)}}
+@keyframes settle{from{transform:translate3d(0,18px,0) scale(.97)}to{transform:translate3d(0,0,0) scale(1)}}
+.logo,h1,.tag,.rule,.label,li,footer{
+  animation:fadein .6s cubic-bezier(.2,.7,.2,1) both,settle 1s cubic-bezier(.16,1,.3,1) both;
+  animation:fadein .6s cubic-bezier(.2,.7,.2,1) both,settle 1s linear(0,0.0272,0.0949,0.186,0.288,0.392,0.492,0.5843,0.6668,0.7385,0.7994,0.8501,0.8914,0.9243,0.95,0.9696,0.9842,0.9947,1.0019,1.0066,1.0094,1.0107,1.0111,1.0108,1.01,1.009,1.0079,1.0067,1.0056,1.0046,1.0037,1.0029,1.0022,1.0016,1.0012,1.0008,1.0005,1.0003,1.0002,1.0001,1,0.9999,0.9999,0.9999,0.9999,0.9999,0.9999,0.9999,1) both}
+.logo{animation-delay:.05s}h1{animation-delay:.13s}.tag{animation-delay:.2s}.rule{animation-delay:.26s}.label{animation-delay:.32s}
+li:nth-child(1){animation-delay:.38s}li:nth-child(2){animation-delay:.44s}li:nth-child(3){animation-delay:.5s}li:nth-child(4){animation-delay:.56s}
+footer{animation-delay:.64s}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+@media (min-width:520px){body{padding:40px 0}.page{min-height:calc(100vh - 80px);border-radius:24px;overflow:hidden;box-shadow:0 2px 6px rgba(48,66,27,.05),0 24px 60px rgba(48,66,27,.12)}}</style>
 </head>
-<body>
+<body ontouchstart="">
 <div class="page">
   <header>
-    <svg class="logo" viewBox="1316 1209 917 673" role="img" aria-label="Agroxport logo"><path d="M1838.17 1331.66C1838.17 1334.19 1836.15 1336.26 1833.64 1336.34H1833.33L1808.58 1336.39H1808.52C1805.81 1336.22 1803.08 1336.23 1800.35 1336.39C1790.15 1337.03 1779.79 1339.95 1769.92 1344.91C1756.26 1351.76 1743.52 1362.5 1733.36 1376.49C1731.73 1378.72 1730.17 1381.05 1728.69 1383.44C1728.65 1383.51 1728.61 1383.56 1728.58 1383.62L1422.42 1839.3L1417.81 1846.15C1417.81 1846.15 1417.79 1846.18 1417.78 1846.19C1401.88 1867.01 1372.93 1880.93 1339.86 1880.93C1331.93 1880.93 1324.25 1880.13 1316.92 1878.63C1316.47 1878.54 1316.26 1878.01 1316.51 1877.63L1398.97 1754.88L1679.99 1336.6L1726.24 1267.76L1763.14 1212.84L1763.89 1211.73C1764.72 1210.76 1765.98 1210.16 1767.38 1210.16C1768.98 1210.16 1770.39 1210.97 1771.23 1212.18L1771.68 1212.98C1771.68 1212.98 1771.68 1213.01 1771.7 1213.02L1804.38 1270.75L1837.36 1329.02L1837.68 1329.58C1837.99 1330.2 1838.16 1330.9 1838.16 1331.64L1838.17 1331.66Z" fill="white" stroke="white"/><path d="M2045.41 1505.92C2045.41 1506.27 2045.2 1506.56 2044.9 1506.69C2044.88 1506.69 2044.86 1506.71 2044.84 1506.71C2044.78 1506.71 2044.72 1506.73 2044.66 1506.75C2037.68 1508.3 2030.72 1510.92 2024.01 1514.53C2008.51 1522.86 1994.28 1536.44 1984.02 1554.21C1980.5 1560.32 1977.63 1566.58 1975.42 1572.9C1972.18 1582.11 1970.31 1591.41 1969.78 1600.45C1969.56 1604.13 1969.56 1607.77 1969.78 1611.33V1792.13H1969.61C1969.61 1838.62 1941.23 1876.68 1905.26 1879.98C1905.17 1879.98 1905.08 1879.99 1904.99 1879.99C1903.57 1879.99 1902.42 1878.84 1902.42 1877.42V1605.94C1902.42 1598.68 1903.29 1591.19 1905.06 1583.66C1907.39 1573.75 1911.29 1563.78 1916.82 1554.21C1924.68 1540.61 1934.87 1529.46 1946.18 1521.23C1953.67 1515.78 1961.66 1511.62 1969.78 1508.89C1977.21 1506.39 1984.78 1505.08 1992.18 1505.08H2044.57C2045.04 1505.08 2045.4 1505.45 2045.4 1505.91L2045.41 1505.92Z" fill="white" stroke="white"/><path d="M2232.31 1408.58C2232.31 1409.69 2231.93 1410.7 2231.28 1411.5L2230.54 1412.24L2200.91 1441.88L2195.06 1447.73C2179.57 1462.04 2160.98 1470.36 2143.05 1471.2C2142.3 1471.24 2141.55 1471.26 2140.8 1471.27H1777.78C1775.18 1471.27 1773.09 1469.17 1773.09 1466.58C1773.09 1465.47 1773.47 1464.45 1774.12 1463.66L1774.88 1462.9L1814.5 1423.68L1833.1 1405.28C1833.95 1404.43 1835.12 1403.9 1836.42 1403.9H2227.62C2230.21 1403.9 2232.31 1406 2232.31 1408.59V1408.58Z" fill="white" stroke="white"/></svg>
+    <svg class="logo" viewBox="-1 1209 918 673" role="img" aria-label="Agroxport logo"><path d="M522.267 1331.66C522.267 1334.19 520.247 1336.26 517.737 1336.34H517.427L492.677 1336.39H492.617C489.907 1336.22 487.177 1336.23 484.447 1336.39C474.247 1337.03 463.887 1339.95 454.017 1344.91C440.357 1351.76 427.617 1362.5 417.457 1376.49C415.827 1378.72 414.267 1381.05 412.787 1383.44C412.747 1383.51 412.707 1383.56 412.677 1383.62L106.517 1839.3L101.907 1846.15C101.907 1846.15 101.887 1846.18 101.877 1846.19C85.9768 1867.01 57.0268 1880.93 23.9568 1880.93C16.0268 1880.93 8.34681 1880.13 1.01681 1878.63C0.566813 1878.54 0.356813 1878.01 0.606813 1877.63L83.0668 1754.88L364.087 1336.6L410.337 1267.76L447.237 1212.84L447.987 1211.73C448.817 1210.76 450.077 1210.16 451.477 1210.16C453.077 1210.16 454.487 1210.97 455.327 1212.18L455.777 1212.98C455.777 1212.98 455.777 1213.01 455.797 1213.02L488.477 1270.75L521.457 1329.02L521.777 1329.58C522.087 1330.2 522.257 1330.9 522.257 1331.64L522.267 1331.66Z" fill="#405924" stroke="#405924"/><path d="M729.507 1505.92C729.507 1506.27 729.297 1506.56 728.997 1506.69C728.977 1506.69 728.957 1506.71 728.937 1506.71C728.877 1506.71 728.817 1506.73 728.757 1506.75C721.777 1508.3 714.817 1510.92 708.107 1514.53C692.607 1522.86 678.377 1536.44 668.117 1554.21C664.597 1560.32 661.727 1566.58 659.517 1572.9C656.277 1582.11 654.407 1591.41 653.877 1600.45C653.657 1604.13 653.657 1607.77 653.877 1611.33V1792.13H653.707C653.707 1838.62 625.327 1876.68 589.357 1879.98C589.267 1879.98 589.177 1879.99 589.087 1879.99C587.667 1879.99 586.517 1878.84 586.517 1877.42V1605.94C586.517 1598.68 587.387 1591.19 589.157 1583.66C591.487 1573.75 595.387 1563.78 600.917 1554.21C608.777 1540.61 618.967 1529.46 630.277 1521.23C637.767 1515.78 645.757 1511.62 653.877 1508.89C661.307 1506.39 668.877 1505.08 676.277 1505.08H728.667C729.137 1505.08 729.497 1505.45 729.497 1505.91L729.507 1505.92Z" fill="#705622" stroke="#705622"/><path d="M916.407 1408.58C916.407 1409.69 916.027 1410.7 915.377 1411.5L914.637 1412.24L885.007 1441.88L879.157 1447.73C863.667 1462.04 845.077 1470.36 827.147 1471.2C826.397 1471.24 825.647 1471.26 824.897 1471.27H461.877C459.277 1471.27 457.187 1469.17 457.187 1466.58C457.187 1465.47 457.567 1464.45 458.217 1463.66L458.977 1462.9L498.597 1423.68L517.197 1405.28C518.047 1404.43 519.217 1403.9 520.517 1403.9H911.717C914.307 1403.9 916.407 1406 916.407 1408.59V1408.58Z" fill="#405924" stroke="#405924"/></svg>
     <h1>PT Agro Terra Export</h1>
     <p class="tag">We connect Indonesia’s agricultural potential with global markets through reliable, quality-driven, and sustainable export solutions.</p>
+    <div class="rule" aria-hidden="true"></div>
   </header>
   <main>
     <p class="label">Let&#8217;s grow together</p>
